@@ -11,14 +11,14 @@ function createRestaurant(name) {
 }
 
 function addMenuItem(restaurant, item) {
-  if (restaurant.menus[item.type].indexOf(item) == -1){
+  if (restaurant.menus[item.type].indexOf(item) === -1){
     restaurant.menus[item.type].push(item)
   }
 }
 
 function removeMenuItem(restaurant, item, type) {
   for (i=0; i < restaurant.menus[type].length; i++){
-    if (restaurant.menus[type][i].name == item){
+    if (restaurant.menus[type][i].name === item){
       restaurant.menus[type].splice(i, 1)
       return `No one is eating our ${item} - it has been removed from the ${type} menu!`
     }

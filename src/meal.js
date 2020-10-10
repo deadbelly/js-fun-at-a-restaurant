@@ -11,7 +11,7 @@ function createMenuItem(name, price, type) {
 }
 
 function addIngredients(newIngredient, ingredients) {
-  if (ingredients.indexOf(newIngredient) == -1){
+  if (ingredients.indexOf(newIngredient) === -1){
     ingredients.push(newIngredient)
   }
 }

@@ -6,7 +6,7 @@ function takeOrder(order, listOfOrders) {
 
 function refundOrder(numberToRemove, listOfOrders) {
   for (i = 0; i<listOfOrders.length; i++){
-    if (listOfOrders[i].orderNumber == numberToRemove){
+    if (listOfOrders[i].orderNumber === numberToRemove){
       listOfOrders.splice(i, 1)
     }
   }
@@ -25,7 +25,7 @@ function listItems(listOfOrders) {
 
 function searchOrder(listOfOrders, item) {
   for (i=0; i < listOfOrders.length; i++){
-    if (listOfOrders[i].item == item) {
+    if (listOfOrders[i].item === item) {
       return true
     }
   }
